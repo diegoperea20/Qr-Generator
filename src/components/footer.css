@@ -1,20 +1,55 @@
-.div-footer{
+.div-footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #232323;
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    font-weight: bold;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    color: #b0b0b0;
+    padding: 1.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
 .div-footer a {
-    margin-left: 5px; /* Añade un margen a la izquierda del enlace */
-    text-decoration: none; /* Remueve el subrayado si no es deseado */
-    color: white;
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: #50d950;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .div-footer a:hover {
-    color: #007bff;
+    color: #3cb43c;
+    transform: translateY(-1px);
+}
+
+.div-footer a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(135deg, #50d950, #3cb43c);
+    transition: width 0.3s ease;
+}
+
+.div-footer a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .div-footer {
+        padding: 1rem;
+        font-size: 0.9rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .div-footer a {
+        margin-left: 0;
+    }
 }
