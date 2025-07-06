@@ -6,7 +6,11 @@ Qr Generator nextjs where you can generate qr image with an entered url.
 
 
 <p align="center">
-  <img src="README-images/qr-generate.PNG" alt="Step1">
+  <img src="README-images/home.png" alt="Step1">
+</p>
+
+<p align="center">
+  <img src="README-images/qr.png" alt="Step1">
 </p>
 
 <p align="center">

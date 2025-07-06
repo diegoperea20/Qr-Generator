@@ -135,7 +135,6 @@ const QRGenerator = () => {
             </>
           ) : (
             <>
-              <span className="btn-icon">⚡</span>
               Generate QR
             </>
           )}
